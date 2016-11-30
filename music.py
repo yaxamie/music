@@ -46,7 +46,6 @@ def main():
             print "Failed to execute command: %s" % e
 
 
-
 def crawl_folder(folder_name, current_depth=0):
     global artists
 
@@ -93,7 +92,6 @@ def crawl_folder(folder_name, current_depth=0):
                         artists["none"] = {'count': 1}
                     else:
                         artists["none"]['count'] += 1
-
 
                 if mp3.tag.title:
                     print spaces + '   ' + mp3.tag.title
