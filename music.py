@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -s /Users/rustyparks/Music/Collection/
 
+import argparse
 import os
 import pprint
-import argparse
 
 import eyed3
 
@@ -72,7 +72,7 @@ def crawl_folder(folder_name, current_depth=0):
                 print spaces + '- ' + item
             filename, file_extension = os.path.splitext(item)
 
-            # force extentiions to lower case
+            # force extensions to lower case
             if not file_extension.islower():
                 lower_ext = file_extension.lower()
                 file_extension = lower_ext
